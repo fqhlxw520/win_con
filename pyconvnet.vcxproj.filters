@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="src\cudaconv2\filter_acts.cu" />
+    <CudaCompile Include="src\cudaconv2\img_acts.cu" />
+    <CudaCompile Include="src\nvmatrix\nvmatrix.cu" />
+    <CudaCompile Include="src\nvmatrix\nvmatrix_kernels.cu" />
+    <CudaCompile Include="src\cudaconv2\weight_acts.cu" />
+    <CudaCompile Include="src\cudaconv2\conv_util.cu" />
+    <CudaCompile Include="src\cudamat_conv.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5556ab50-92f5-4659-b87e-70add4470c50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\matrix.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\matrix_funcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dummyinclude\cutil_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\conv_util.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\cudamat.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\cudamat_conv.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\cudamat_kernels.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\filter_acts.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\learn_kernels.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\nvmatrix.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\nvmatrix_kernels.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\nvmatrix_operators.cuh">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
